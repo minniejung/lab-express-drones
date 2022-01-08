@@ -1,8 +1,160 @@
-body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,800;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
 }
 
-a {
-  color: #00b7ff;
+h1 {
+  font-size: 5rem;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 4rem;
+  padding: 30px;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/* Home page */
+
+.bg {
+  background-image: url("../images/drone.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 0 50px;
+}
+
+.mainTitle a {
+  margin: 120px 0 0 30px;
+  border: 1px solid grey;
+  border-radius: 50px;
+  text-align: center;
+  color: black;
+  width: 250px;
+  padding: 20px;
+  background: lightskyblue;
+}
+
+/* Drone list page */
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  background-color: darksalmon;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.dronePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createBtn {
+  width: 350px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 50px;
+  padding: 15px;
+  margin-bottom: 50px;
+  background-color: darksalmon;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+    -2px -2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.createBtn h3 {
+  color: white;
+}
+
+.dronesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.card {
+  background-color: antiquewhite;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  padding: 20px;
+  gap: 5px;
+}
+
+.btnList {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid grey;
+  color: white;
+  background-color: darksalmon;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+    -2px -2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Create form */
+
+.form {
+  border: 1px grey solid;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 20px;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.input {
+  padding: 10px;
+  width: 400px;
+}
+
+.btn.create,
+.btn.edit {
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+  font-weight: bold;
+}
+
+.btn a {
+  color: white;
 }
